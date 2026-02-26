@@ -6,7 +6,7 @@
 	--accent1-dark: #f6b038;
 	--accent2: #ffb17d;
 	--accent2-dark: #f08c4b;
-	--bg: #f7f2e5;
+	--bg: #fcf4e0;
 	--bg-light: #fffff7;
 	--color-hero-gradient: linear-gradient(to bottom, #ffd4c8 0%,#f0ab98 100%);
 
@@ -79,7 +79,7 @@ html {
 	display: none;
 	
 	@media screen and (min-width: 850px) {
-		display: flex;
+		display: flex !important;
 	}
 
 	li {
@@ -117,14 +117,11 @@ html {
 	a:hover {
     background-color: var(--accent2); 
     color: var(--bg-light); 
+	font-weight: bold;
 	
 }
 }
-@media screen and (max-width: 850px) {
-	.site-nav__links li {
-		margin-bottom: 0;
-	}
-}
+
 body.show-menu .site-nav__links {
     display: block;
 }
